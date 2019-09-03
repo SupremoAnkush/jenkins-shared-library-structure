@@ -1,6 +1,6 @@
 package org.dcube.build
-import org.dcube.IStepExecutor
-import org.dcube.ioc.ContextRegistry
+//import org.dcube.IStepExecutor
+//import org.dcube.ioc.ContextRegistry
 
 class HelloWorld implements Serializable {
     private String _solutionPath
