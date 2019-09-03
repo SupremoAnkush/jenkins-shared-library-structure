@@ -1,3 +1,5 @@
+#!/isr/bin/env groovy
+
 @Library('jenkins-library@master') _
  
 pipeline {
