@@ -8,7 +8,7 @@ pipeline {
             gitCheckout(
                 branch: "master",
                 userRemoteConfigs: [[credentialsId: 'AnkushGithub',
-                url: 'https://github.com/SupremoAnkush/jenkins-shared-library-structur']]])
+                url: 'https://github.com/SupremoAnkush/jenkins-shared-library-structure']]])
             )
             }
     }
