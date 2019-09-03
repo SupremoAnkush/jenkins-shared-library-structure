@@ -3,14 +3,10 @@
 pipeline {
     agent any
     stages {
-        stage('Git Checkout') {
+       stage('build') {
             steps {
-            gitCheckout(
-                branch: "master",
-                userRemoteConfigs: [[credentialsId: 'AnkushGithub',
-                url: 'https://github.com/SupremoAnkush/jenkins-shared-library-structure']]])
-            )
+                HelloWorld 'testing'
             }
-    }
+        }
     }
 }
