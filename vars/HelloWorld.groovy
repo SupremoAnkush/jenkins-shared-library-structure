@@ -1,5 +1,5 @@
 import org.dcube.build.HelloWorld
-//import org.dcube.ioc.ContextRegistry
+import org.dcube.ioc.ContextRegistry
 
 def call(String solutionPath) {
     ContextRegistry.registerDefaultContext(this)
