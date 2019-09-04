@@ -1,21 +1,11 @@
-package org.dcube.build
-import org.dcube.IStepExecutor
-import org.dcube.ioc.ContextRegistry
+#!/usr/bin/env groovy
+package com.cleverbuilder
 
-class HelloWorld implements Serializable {
-    private String _solutionPath
+class GlobalVars {
+   static String foo = "bar"
 
-    HelloWorld(String solutionPath) {
-        _solutionPath = solutionPath
-    }
-
-    void build() {
-        IStepExecutor steps = ContextRegistry.getContext().getStepExecutor()
-
-//        int returnStatus = steps.sh("echo \"building ${this._solutionPath}...\"")
-        int returnStatus = steps.sh("${this._solutionPath}")
-        if (returnStatus != 0) {
-            steps.error("Unable To Execute The Command")
-        }
-    }
+   // refer to this in a pipeline using:
+   //
+   // import com.cleverbuilder.GlobalVars
+   // println GlobalVars.foo
 }
