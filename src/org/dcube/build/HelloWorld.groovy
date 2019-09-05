@@ -1,5 +1,6 @@
 class HelloWorld{
-static def void main(String[] args){
+	static def void main(String[] args,closure){}
+main(String[] args){
 		String rigletName = "Tycoon_8872";
 		String serverIp = "http://23.101.140.72:3010";
 		def JSONParser parser=new JSONParser();
