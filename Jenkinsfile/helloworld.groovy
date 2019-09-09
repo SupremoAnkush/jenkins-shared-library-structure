@@ -12,7 +12,7 @@ pipeline {
         }*/
        stage('repoList') {
             steps {
-                 fetchRepoList()
+                 fetchRepoList
             }
         }
     }
