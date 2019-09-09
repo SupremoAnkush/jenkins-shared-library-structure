@@ -1,4 +1,4 @@
-#!/isr/bin/env groovy
+#!/usr/bin/env groovy
 
 @Library('jenkins-library@master') _
  
