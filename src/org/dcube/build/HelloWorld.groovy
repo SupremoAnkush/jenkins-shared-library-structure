@@ -1,4 +1,4 @@
-class HelloWorld{
+/*class HelloWorld{
 	static def void main(String[] args,closure){}
 main(String[] args){
 		String rigletName = "Tycoon_8872";
@@ -76,3 +76,4 @@ main(String[] args){
         }
     }
 }
+*/
