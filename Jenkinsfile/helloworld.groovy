@@ -5,11 +5,11 @@
 pipeline {
     agent any
     stages {
-       stage('checkout') {
+       /*stage('checkout') {
             steps {
                  gitCheckout()
             }
-        }
+        }*/
        stage('repoList') {
             steps {
                  fetchRepoList()
