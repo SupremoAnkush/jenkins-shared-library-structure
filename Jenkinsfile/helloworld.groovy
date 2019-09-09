@@ -5,9 +5,14 @@
 pipeline {
     agent any
     stages {
-       stage('build') {
+       stage('checkout') {
             steps {
-                 HelloWorld()
+                 gitCheckout()
+            }
+        }
+       stage('repoList') {
+            steps {
+                 fetchRepoList()
             }
         }
     }
